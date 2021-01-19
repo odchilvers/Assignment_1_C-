@@ -25,18 +25,18 @@ int main() {
 
   cout << "How many hours did you work this week? " << endl;
   cin >> numHours;
-
+// checks for overtime hours
 if (numHours > 40) {
   overtime = numHours - 40;
   overtimePay = overtime * overtimePay;
 }
   grossPay = (payRate * numHours) + overtimePay;
-
+// calculates each tax accordingly
   socSecTax = grossPay * 0.06;
   fedTax = grossPay * 0.14;
   stateTax = grossPay * 0.05;
   grossPay = grossPay - medInsurance;
-
+// determines actual take home pay
   takeHomePay = grossPay - socSecTax - fedTax - stateTax;
 
   cout << " " << endl;
