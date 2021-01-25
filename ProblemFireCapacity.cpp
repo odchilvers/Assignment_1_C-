@@ -31,7 +31,7 @@ else {
   // calculates how many people must be excluded to return to max capacity
   numUntilMax = numOfPeople - maxRoomCapacity;
   cout << "Illegal: Fire Hazard! Too many people in room." << endl;
-  // calculates how many people will need to leave
+  // prints how many people will need to leave
   cout << numUntilMax << " people must be excluded in order to meet the fire regulations." << endl;
 }
   return 0;
